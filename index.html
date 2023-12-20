@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="src/css/master.css" />
+  <link rel="stylesheet" href="src/css/output.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="w-full min-h-[100vh] flex justify-center  font-title bg-bgMain">
+    <section class="w-[90%] h-[30%] flex justify-center items-center flex-wrap p-10">
+      <h1 class="text-6xl ">Get recipes straight</h1>
+      <div id="chooseBtn" class="flex w-full justify-center items-center box-content mt-10">
+        <button data-choose="breakfast" class="px-10 py-2 mx-3 rounded-2xl duration-200 text-green-600 text-xs hover:border-[1px] hover:border-green-700 bg-green-100"
+          >BREAKFAST</button>
+        <button data-choose="lunch" class="px-10 py-2 mx-3 rounded-2xl duration-200 text-blue-600 text-xs hover:border-[1px] hover:border-blue-700 bg-blue-100"
+          >LUNCH</button>
+        <button data-choose="desserts" class="px-10 py-2 mx-3 rounded-2xl duration-200 text-orange-600 text-xs hover:border-[1px] hover:border-orange-700 bg-orange-100"
+         >DESSERTS</button>
+        <button data-choose="side" class="px-10 py-2 mx-3 rounded-2xl duration-200 text-pink-600 text-xs hover:border-[1px] hover:border-pink-700 bg-pink-200"
+          >SIDES</button>
+        <button data-choose="drink" class="px-10 py-2 mx-3 rounded-2xl duration-200 text-red-600 text-xs hover:border-[1px] hover:border-red-700 bg-red-200"
+          >DRINKS</button>
+      </div>
+
+      <div id="cardBox" class="flex flex-wrap justify-evenly items-center w-full mt-10 ">
+        <article data-title="breakfast" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative ">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl " src="src/img/breakfast/1.webp">
+          <h3 class="p-4 text-2xl  mt-2 cursor-pointer mb-16">Breakfast Toast: 3 Different Ways</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-green-600 text-xs hover:border-[1px] hover:border-green-700 bg-green-100"
+              href="">BREAKFAST</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">5 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="breakfast" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/breakfast/2.webp">
+          <h3 class="p-4 text-2xl  mt-2 cursor-pointer mb-16">Quick and Easy Peanut Butter Pancakes</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7 ">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-green-600 text-xs hover:border-[1px] hover:border-green-700 bg-green-100"
+              href="">BREAKFAST</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="lunch" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/lunch/1.webp">
+          <h3 class="p-4 text-2xl mt-2 cursor-pointer mb-16">Chickpea Salad with Lemon Tahini Dressing</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-blue-600 text-xs hover:border-[1px] hover:border-blue-700 bg-blue-100"
+          href="">LUNCH</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="lunch" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/lunch/2.webp">
+          <h3 class="p-4 text-2xl mt-2 cursor-pointer mb-16">Chickpea Salad with Lemon Tahini Dressing</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-blue-600 text-xs hover:border-[1px] hover:border-blue-700 bg-blue-100"
+          href="">LUNCH</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="side" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/side/1.webp">
+          <h3 class="p-4 text-2xl  mt-2 cursor-pointer mb-16">Strawberry Caprese Summer Salad</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-pink-600 text-xs hover:border-[1px] hover:border-pink-700 bg-pink-200"
+            href="">SIDES</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="side" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/side/2.webp">
+          <h3 class="p-4 text-2xl mb-16 mt-2 cursor-pointer">Strawberry Caprese Summer Salad</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-pink-600 text-xs hover:border-[1px] hover:border-pink-700 bg-pink-200"
+            href="">SIDES</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="drink" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/drink/1.webp">
+          <h3 class="p-4 text-2xl mb-16 mt-2 cursor-pointer">Strawberry Caprese Summer Salad</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-red-600 text-xs hover:border-[1px] hover:border-red-700 bg-red-200"
+            href="">DRINKS</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="drink" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/drink/2.webp">
+          <h3 class="p-4 text-2xl mb-16 mt-2 cursor-pointer">Strawberry Caprese Summer Salad</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-red-600 text-xs hover:border-[1px] hover:border-red-700 bg-red-200"
+            href="">DRINKS</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="desserts" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/Desserts/1.webp">
+          <h3 class="p-4 text-2xl mb-16 mt-2 cursor-pointer">Strawberry Caprese Summer Salad</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-orange-600 text-xs hover:border-[1px] hover:border-orange-700 bg-orange-100"
+            href="">DESSERTS</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="desserts" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/Desserts/2.webp">
+          <h3 class="p-4 text-2xl mb-16 mt-2 cursor-pointer">Strawberry Caprese Summer Salad</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-orange-600 text-xs hover:border-[1px] hover:border-orange-700 bg-orange-100"
+            href="">DESSERTS</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+        <article data-title="desserts" class="card w-[32%] h-[450px] bg-white rounded-3xl mb-10 relative">
+          <img class="w-full h-[60%] object-cover rounded-t-3xl  " src="src/img/Desserts/3.webp">
+          <h3 class="p-4 text-2xl mb-16 mt-2 cursor-pointer">Strawberry Caprese Summer Salad</h3>
+          <div class="flex flex-wrap w-full justify-between absolute bottom-7">
+            <a class="px-10 py-2 mx-3 rounded-2xl duration-200 text-orange-600 text-xs hover:border-[1px] hover:border-orange-700 bg-orange-100"
+            href="">DESSERTS</a>
+            <div class="text-gray-500 flex items-center ">
+              <i class="bi bi-stopwatch text-lg px-2 pb-[5px]"></i>
+              <span class="pe-4">30 Minutes</span>
+            </div>
+          </div>
+        </article>
+    </section>
+
+  </main>
+<script src="src/js/master.js">
+
+    </script>
+</body>
+
+</html>
